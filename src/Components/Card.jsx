@@ -13,9 +13,7 @@ function Card(props) {
     boxClass='box circle'
 
   }
-  if(props.box3==='yes' && props.row===3 ){
-    boxClass='box box3'
-  }
+ 
   
   
     
@@ -26,8 +24,8 @@ function Card(props) {
     <div className={boxClass} style={{...style1}}>
 
        <SmallBox innerbox ='red' innerText = {props.redText}   />
-       <SmallBox innerbox ='yellow' innerText = {props.ellipsize ==='yes' ? yellowtxt1 : yellowtxt2} ellipsize = {props.ellipsize} box10yellow ={props.box10yellow} row={props.row}/>
-       <SmallBox innerbox ='blue' innerText = {props.blueText} arr={props.arr} />
+       <SmallBox innerbox ='yellow' innerText = {props.ellipsize ==='yes' ? yellowtxt1 : yellowtxt2} ellipsize = {props.ellipsize} box10yellow ={props.box10yellow} />
+       <SmallBox innerbox ='blue' innerText = {props.blueText}  />
        <LineConnection />
        
 
